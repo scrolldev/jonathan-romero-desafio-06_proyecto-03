@@ -1,0 +1,186 @@
+
+:root {
+  --color-primary_background: #1F2023;
+  --color-fieldset_false: #D6E2DE;
+  --color-fieldset_true: #A6BDB7;
+  --color-title: #E8EAED;
+  --color-legend: #4D6D63;
+  --color-legend_titles: #E8EAED;
+  --color-input: #4B6A62;
+  --color-input_text: #ffffff;
+  --color-footer: #E96093;
+}
+
+.container {
+  width: 80%;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: var(--color-primary_background);
+}
+
+form {
+  text-align: left;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-title);
+  font-size: 40px;
+  border: 15px solid var(--color-legend);
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  margin-bottom: 0;
+}
+
+legend {
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  color: var(--color-legend_titles);
+  background: var(--color-legend);
+}
+
+fieldset {
+  margin: 20px 0 30px 0;
+  background: var(--color-fieldset_false);
+}
+
+.fieldset-cambio:focus-within,
+.fieldset-cambio:hover {
+  background: var(--color-fieldset_true);
+}
+
+.field-data {
+  display: flex;
+  justify-content: center;
+}
+
+.field-data_line {
+  width: 50%;
+  border-bottom: 10px dotted var(--color-fieldset_false);
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin: 15px 0 5px 0;
+}
+
+.input-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.input-container label {
+  display: block;
+}
+
+.input-container input {
+    width: 80%;
+    box-sizing: border-box;
+    text-align: end;
+    padding: 5px;
+    margin-top: 5px;
+    color: rgb(54, 53, 53);
+}
+
+.input-container select {
+  width: 80%;
+}
+
+.input-container textarea {
+  width: 80%;
+  color: rgb(54, 53, 53);
+}
+
+.input-genero {
+  text-align: center;
+  padding: 10px;
+}
+
+.radio-container {
+  padding: 10px;
+}
+
+.consent-checkboxes {
+  color: var(--color-legend_titles);
+  font-size: 12px;
+}
+
+.consent-checkboxes_camp {
+  color: var(--color-legend_titles);
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.sub-sede {
+  font-weight: 500;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: var(--color-input);
+  color: var(--color-fieldset_true);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--color-fieldset_false);
+  color: var(--color-input);
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.activity-inter {
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+input[name="nombre"]:focus {
+  background: var(--color-input);
+}
+
+input[name="apellido"]:focus {
+  background: var(--color-input);
+}
+
+input[name="documento"]:focus {
+  background: var(--color-input);
+}
+
+textarea[name="descripcion"]:focus {
+  background: var(--color-input);
+}
+
+input[name="telefono"]:focus {
+  background: var(--color-input);
+}
+
+input[name="correo"]:focus {
+  background: var(--color-input);
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    width: 50%;
+  }
+  .form-responsive {
+    width: 100%;
+  }
+}

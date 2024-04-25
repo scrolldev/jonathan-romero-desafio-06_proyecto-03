@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto&display=swap" rel="stylesheet">
+  <title>Afiliación</title>
+</head>
+<body>
+
+  <section class="container">
+    <h1>Vení al Gym!</h1>
+    <form class="form-responsive">
+      <fieldset class="fieldset-cambio">
+        <legend><b>D</b>atos <b>P</b>ersonales</legend>
+    
+        <div class="input-container">
+          <label for="nombre">Nombre:*</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="input-container">
+          <label for="apellido">Apellido:*</label>
+          <input type="text" id="apellido" name="apellido">
+        </div>
+        <div class="input-container">
+          <label for="documento">Documento:*</label>
+          <input type="text" id="documento" name="documento">
+        </div>
+        <div class="input-container">
+          <label for="nacionalidad">Nacionalidad:*</label>
+          <select name="nacionalidad" id="nacionalidad">
+            <option value="" disabled selected>-Seleccionar-</option>
+            <option value="opcion-1">Argentina</option>
+            <option value="opcion-2">Brasileña</option>
+            <option value="opcion-3">Uruguaya</option>
+            <option value="opcion-4">Otra</option>
+          </select>
+        </div>
+    
+        <div class="input-container">
+          <label for="lbl-descripcion">Contanos un poco de vos...</label>
+          <textarea name="descripcion" id="lbl-descripcion" cols="15" rows="6"></textarea>
+        </div>
+
+        <div class="input-genero">
+          <label>Sexo:*</label>
+          <div class="radio-container">
+            <input type="radio" id="femenino" name="input-sexo" checked>
+            <label for="femenino">Femenino</label>
+
+            <input type="radio" id="masculino" name="input-sexo">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" id="otro" name="input-sexo">
+            <label for="otro">Otro</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="field-data">
+        <div class="field-data_line"></div>
+      </div>
+
+      <fieldset class="fieldset-cambio">
+        <legend><b>D</b>atos de <b>C</b>ontacto</legend>
+        <div class="input-container">
+          <label for="lbl-telefono">Teléfono:</label>
+          <input type="number" id="lbl-telefono" name="telefono" placeholder="Código de área y número">
+        </div>
+        <div class="input-container">
+          <label for="lbl-contacto">Dirección de correo eléctronico:*</label>
+          <input type="email" id="lbl-contacto" name="correo" placeholder="Ej: mail@gmail.com">
+        </div>
+      </fieldset>
+
+      <div class="field-data">
+        <div class="field-data_line"></div>
+      </div>
+
+      <fieldset class="fieldset-cambio">
+        <legend><b>A</b>ctividades</legend>
+        <p class="activity-inter">Por favor, indicá cuáles actividades te interesan.</p>
+        <p class="sub-sede">Sede Palermo:</p>
+        <div class="sub-sede">
+          <input type="checkbox" id="pal-basquet" name="pal-deport_1">
+          <label for="pal-basquet">Básquet</label>
+          <input type="checkbox" id="pal-boxeo" name="pal-deport_2">
+          <label for="pal-boxeo">Boxeo</label>
+          <input type="checkbox" id="pal-futbol" name="pal-deport_3">
+          <label for="pal-futbol">Fútbol</label>
+          <input type="checkbox" id="pal-tenis" name="pal-deport_4">
+          <label for="pal-tenis">Tenis</label>
+        </div>
+        <p class="sub-sede">Sede Rosario:</p>
+        <div class="sub-sede">
+          <input type="checkbox" id="ros-basquet" name="ros-deport_1">
+          <label for="ros-basquet">Básquet</label>
+          <input type="checkbox" id="ros-futbol" name="ros-deport_2">
+          <label for="ros-futbol">Fútbol</label>
+          <input type="checkbox" id="ros-rugby" name="ros-deport_3">
+          <label for="ros-rugby">Rugby</label>
+          <input type="checkbox" id="ros-voley" name="ros-deport_4">
+          <label for="ros-voley">Voley</label>
+        </div>
+      </fieldset>
+      <div class="consent-checkboxes">
+        <input type="checkbox" id="pal-basquet" name="pal-deport_1">
+        <label for="pal-basquet">Acepto las condiciones*</label>
+      </div>
+      <div class="consent-checkboxes">
+        <input type="checkbox" id="pal-basquet" name="pal-deport_1" checked>
+        <label for="pal-basquet">Deseo recibir novedades</label>
+      </div>
+      
+      <p class="consent-checkboxes_camp">*: Campo obligatorio.</p>
+      <div class="button-container">
+        <button class="button">Iniciar afiliación</button>
+        <button class="button">Restablecer</button>
+      </div>
+    </form>
+  </section>
+  
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
