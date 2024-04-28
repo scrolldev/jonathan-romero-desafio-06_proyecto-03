@@ -3,12 +3,13 @@
   --color-primary_background: #1F2023;
   --color-fieldset_false: #D6E2DE;
   --color-fieldset_true: #A6BDB7;
-  --color-title: #E8EAED;
-  --color-legend: #4D6D63;
+  --color-title: #86C0CA;
+  --color-legend: #D7B5B1;
   --color-legend_titles: #E8EAED;
   --color-input: #4B6A62;
   --color-input_text: #ffffff;
   --color-footer: #E96093;
+  --color-botton: #20CED5;
 }
 
 .container {
@@ -33,9 +34,9 @@ h1 {
   font-family: "Poppins", sans-serif;
   color: var(--color-title);
   font-size: 40px;
-  border: 15px solid var(--color-legend);
-  border-right: 15px solid transparent;
-  border-left: 15px solid transparent;
+  border: 15px dashed var(--color-legend);
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
   margin-bottom: 0;
 }
 
@@ -43,18 +44,37 @@ legend {
   padding: 10px;
   border-radius: 5px;
   font-family: "Roboto", sans-serif;
-  color: var(--color-legend_titles);
+  color: var(--color-legend_title);
   background: var(--color-legend);
+  border: 3px solid var(--color-title);
 }
 
 fieldset {
   margin: 20px 0 30px 0;
   background: var(--color-fieldset_false);
+  border: 5px solid var(--color-title);
 }
 
-.fieldset-cambio:focus-within,
-.fieldset-cambio:hover {
-  background: var(--color-fieldset_true);
+.fieldset-cambio_1:focus-within,
+.fieldset-cambio_1:hover {
+  background-image: url(../img/fitness-realidad-virtual.webp);
+  background-size: cover;
+}
+
+.fieldset-cambio_2:focus-within,
+.fieldset-cambio_2:hover {
+  background-image: url(../img/11062b_e4563df2fca24a13b866e2248eb0fcf7~mv2.jpeg);
+  background-size: 50% contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fieldset-cambio_3:focus-within,
+.fieldset-cambio_3:hover {
+  background-image: url(../img/athletic-girl-doing-online-training-260nw-2375022949.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50% contain;
 }
 
 .field-data {
@@ -63,8 +83,12 @@ fieldset {
 }
 
 .field-data_line {
-  width: 50%;
-  border-bottom: 10px dotted var(--color-fieldset_false);
+  width: 80%;
+  border-bottom: 10px double var(--color-fieldset_false);
+}
+
+.fieldset-cambio {
+  padding-bottom: 30px;
 }
 
 label {
@@ -88,7 +112,6 @@ label {
     text-align: end;
     padding: 5px;
     margin-top: 5px;
-    color: rgb(54, 53, 53);
 }
 
 .input-container select {
@@ -126,21 +149,21 @@ label {
 
 .button-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .button {
   padding: 10px;
   margin: 20px;
   border-radius: 5px;
-  background-color: var(--color-input);
-  color: var(--color-fieldset_true);
+  background-color: var(--color-botton);
 }
 
 .button:hover,
 .button:focus {
-  background-color: var(--color-fieldset_false);
-  color: var(--color-input);
+  background-color: var(--color-legend);
+  color: black;
+  font-weight: 600;
 }
 
 p {
