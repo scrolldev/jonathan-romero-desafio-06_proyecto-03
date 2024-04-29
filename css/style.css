@@ -10,6 +10,8 @@
   --color-input_text: #ffffff;
   --color-footer: #E96093;
   --color-botton: #20CED5;
+  --color-gradient_1: #1FCDD4;
+  --color-gradient_2: #DDA495;
 }
 
 .container {
@@ -51,7 +53,7 @@ legend {
 
 fieldset {
   margin: 20px 0 30px 0;
-  background: var(--color-fieldset_false);
+  background: linear-gradient(to right, var(--color-gradient_1), var(--color-gradient_2));;
   border: 5px solid var(--color-title);
 }
 
@@ -71,7 +73,7 @@ fieldset {
 
 .fieldset-cambio_3:focus-within,
 .fieldset-cambio_3:hover {
-  background-image: url(../img/athletic-girl-doing-online-training-260nw-2375022949.png);
+  background-image: url(../img/athletic-girl-doing-online-training-260nw-2375022949.png), linear-gradient(to right, rgba(255, 255, 255, 0.5), var(--color-gradient_1));
   background-repeat: no-repeat;
   background-position: right;
   background-size: 50% contain;
